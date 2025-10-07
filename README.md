@@ -1,28 +1,28 @@
-# 🧩 Script de Criação de Usuários, Grupos e Diretórios
+# 🧩 User, Group, and Directory Creation Script
 
-## 📄 Descrição
-Este script automatiza a criação de **diretórios**, **grupos de usuários**, **usuários** e a **configuração de permissões** no Linux.
+## 📄 Description
+This script automates the creation of **directories**, **user groups**, **users**, and the **configuration of permissions** on Linux systems.
 
-## ⚙️ O que o script faz
-1. Cria os diretórios:
-/publico
-/adm
-/ven
-/sec
+## ⚙️ What the Script Does
+1. Creates the following directories:
+/publico  
+/adm  
+/ven  
+/sec  
 
-2. Cria os grupos:
-GRP_ADM
-GRP_VEN
-GRP_SEC
+2. Creates the following groups:  
+GRP_ADM  
+GRP_VEN  
+GRP_SEC  
 
-3. Cria os usuários e os adiciona aos respectivos grupos.  
-Senha padrão: `123`
+3. Creates users and assigns them to their respective groups.  
+Default password: `123`
 
-4. Define permissões:
-- Diretórios de grupo: acesso total apenas ao grupo (`770`)
-- Diretório público: acesso total a todos os usuários (`777`)
+4. Sets permissions:
+- Group directories: full access only for group members (`770`)  
+- Public directory: full access for all users (`777`)  
 
-## 💻 Como usar
+## 💻 How to Use
 ```bash
 chmod +x criar_usuarios.sh
 sudo ./criar_usuarios.sh
